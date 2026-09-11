@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tea - Contact & Data</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Tea Data & Feedback</h1>
+
+            <section>
+                <h2>Tea Comparison Table</h2>
+                <table>
+                    <caption>Popular Tea Types and Steeping Guidelines</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tea Variety</th>
+                            <th scope="col">Oxidation Level</th>
+                            <th scope="col">Water Temp (C)</th>
+                            <th scope="col">Steep Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">White Tea</th>
+                            <td>Unoxidized</td>
+                            <td>70 - 80</td>
+                            <td>4 - 5 mins</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Green Tea</th>
+                            <td>Unoxidized</td>
+                            <td>75 - 85</td>
+                            <td>2 - 3 mins</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Oolong Tea</th>
+                            <td>Partially Oxidized</td>
+                            <td>85 - 90</td>
+                            <td>3 - 5 mins</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Black Tea</th>
+                            <td>Fully Oxidized</td>
+                            <td>95 - 100</td>
+                            <td>3 - 5 mins</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Herbal Tea</th>
+                            <td>None (Caffeine Free)</td>
+                            <td>100</td>
+                            <td>5 - 7 mins</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Note: Steeping times vary based on personal preference.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section>
+                <h2>Send Us Your Thoughts</h2>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required><br><br>
+
+                        <label for="cups">Cups of tea per day:</label><br>
+                        <input type="number" id="cups" name="cups" min="0" max="15" placeholder="1"><br><br>
+
+                        <label for="date">Favorite Brew Date:</label><br>
+                        <input type="date" id="date" name="brewDate"><br><br>
+
+                        <p>Preferred Tea Type:</p>
+                        <input type="radio" id="radio-green" name="teaType" value="green">
+                        <label for="radio-green">Green</label>
+                        
+                        <input type="radio" id="radio-black" name="teaType" value="black">
+                        <label for="radio-black">Black</label><br><br>
+
+                        <label for="subscribe">Subscribe to Newsletter:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="40" placeholder="Type your message here..."></textarea><br><br>
+
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Meyir</p>
+        </footer>
+    </body>
+</html>
